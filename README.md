@@ -48,8 +48,10 @@ Papers
 ### Heuristic Search
 
 * [A Formal Basis for the Heuristic Determination of Minimum Cost Paths](http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/astar.pdf) - The original A* paper. Introduces the ideas of consistency and admissibility. Also has proofs for the optimality of A*.
-* [On the complexity of Admissible Search Algorithms](http://www.sciencedirect.com/science/article/pii/0004370277900029) - A* has worst-case performance with an admisible by inconsistent heuristic. This algorithm deals with such heuristics and improves the worst-case performance.
+* [On the complexity of Admissible Search Algorithms](http://www.sciencedirect.com/science/article/pii/0004370277900029) - A* has worst-case performance with an admisible but inconsistent heuristic. This algorithm deals with such heuristics and improves the worst-case performance.
 * [A Heuristic Search Algorithm with Modifiable Estimate](http://www.sciencedirect.com/science/article/pii/0004370284900031) - Most algorithms derived from A* consider the heuristic cost h(s) to be a constant. This is the first algorithm that treats the heuristic cost as a variable and improves it during search whenever possible. The paper also has an influential proof of a result that says that no overall optimal algorithm exits if the cost of an algorithm is measured by the total number of node expansions.
+* [The Heuristic Search under Conditions of Error](http://www.sciencedirect.com/science/article/pii/0004370274900149) - Perhaps the first paper that relaxes the condition of admissibility on the heuristic. This paper discusses *Bandwidth search* which allows for the heuristic to over-estimate (and under-estimate) the optimal cost to goal by a fixed quantity. It then goes on to derive bounds on the solution quality using these upper and lower bounds on the heuristic.
+* [Heuristic Search Viewed as Path Finding in Graph](http://www.sciencedirect.com/science/article/pii/000437027090007X) - Introduces what is now popularly known as weighted-A*, that is A* with the heuristic inflated by an inflation constant.
 
 Lecture Notes
 ------------
